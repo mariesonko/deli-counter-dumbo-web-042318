@@ -3,18 +3,18 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     position = []
-    the_line.each_with_index { |person, number|
+    katz_deli.each_with_index { |person, number|
       position.push( "#{number + 1}. #{person}") }
       puts "The line is currently: " + position.join(" ")
     end
   end
-
+  
   def line(other_deli)
     if other_deli.empty?
       puts "The line is currently empty."
     else
       position = []
-      the_line.each_with_index { |person, number|
+      other_deli.each_with_index { |person, number|
         position.push( "#{number + 1}. #{person}") }
         puts "The line is currently: " + position.join(" ")
       end
@@ -25,10 +25,10 @@ def line(katz_deli)
         puts "The line is currently empty."
       else
         position = []
-        the_line.each_with_index { |person, number|
+        another_deli.each_with_index { |person, number|
           position.push( "#{number + 1}. #{person}") }
           puts "The line is currently: " + position.join(" ")
         end
       end
-
+      
     

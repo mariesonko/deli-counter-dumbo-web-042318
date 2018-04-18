@@ -35,3 +35,14 @@ def line(katz_deli)
       katz_deli.push(name)
       puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end 
+
+def now_serving(katz_deli)
+  if katz_deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    served_person = katz_deli.shift
+    puts "Currently serving #{served_person}."
+
+  end
+end 
+    
